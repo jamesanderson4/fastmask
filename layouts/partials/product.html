@@ -1,0 +1,15 @@
+<div class="product">
+	<h2 class="product__name">{{ .id }}</h2>
+	<div class="product__button-container">
+		<div class="product__price">£{{ .price }}</div>
+		<button
+			class="snipcart-add-item buy-button"
+			data-item-id="{{ .id }}"
+			data-item-price="{{ .price }}"
+			data-item-url="{{ .product_url }}"
+			data-item-description="{{ .description }}"
+		>
+			Add to cart
+		</button>
+	</div>
+</div>
