@@ -4,10 +4,12 @@
 	border: 0;
 }
 body {
-	height: 100vh;
+	max-height: 100vh;
 	width: 100vw;
 	font-family: "Montserrat", sans-serif;
 	background-color: #303235;
+	overflow: hidden;
+	position: fixed;
 }
 .header {
 	text-align: center;
@@ -17,10 +19,12 @@ body {
 	background-color: #303235;
 	display: flex;
 	justify-content: center;
+	height: 50px;
 }
 .header__logo {
-	height: 75px;
-	padding-top: 10px;
+	height: 50px;
+	margin-top: 5px;
+	align-self: center;
 }
 .header__image {
 	height: 40vh;
@@ -32,52 +36,118 @@ body {
 .header__img {
 	height: inherit;
 }
-.header__description {
+h3 {
 	color: #ffffff;
-	font-size: 1.5em;
+	font-size: 1em;
 	font-weight: 400;
+	width: 90vw;
+	padding-left: 5vw;
 }
 .col {
-	width: 20vw;
-	height: 100vw;
-	background-color: #1b1d20;
-	top: 0;
+	display: none;
 }
-
 #content {
-	width: 60vw;
+	width: 100vw;
 	height: 100vw;
 }
 #qform {
-	width: 50vw;
+	width: 90vw;
+	height: 40vw;
 	margin-left: 5vw;
 	text-align: center;
 	background-color: #464c54;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-content: space-between;
 }
 #liveprice {
-	font-size: 75px;
+	font-size: 40px;
 	color: #ffffff;
 	text-align: center;
 }
 #select-quantity {
-	font-size: 1em;
-	margin: 10px;
-	padding: 10px;
+	font-size: 15px;
+	margin: 2.5px;
+	padding: 5px;
 	border-radius: 5px;
 	font-family: "Montserrat", sans-serif;
 	text-align: center;
 	background-color: #1f1f1f;
 	color: #ffffff;
 }
+.footer {
+	margin-top: 10px;
+}
 button,
 .snipcart-add-item {
-	font-size: 1.5em;
+	font-size: 20px;
 	margin: 10px;
 	padding: 10px;
 	border-radius: 5px;
 	font-family: "Montserrat", sans-serif;
 	background-color: #1f1f1f;
 	color: #ffffff;
+}
+@media only screen and (min-width: 768px) {
+	/* For desktop: */
+	body {
+		max-height: 0;
+		position: static;
+		overflow: scroll;
+	}
+	.col {
+		width: 20vw;
+		height: 100vw;
+		background-color: #1b1d20;
+		top: 0;
+		display: block;
+	}
+	h3 {
+		color: #ffffff;
+		font-size: 1em;
+		font-weight: 400;
+		width: 50vw;
+		padding-left: 5vw;
+	}
+	#content {
+		width: 60vw;
+		height: 100vw;
+	}
+	#qform {
+		width: 50vw;
+		height: auto;
+		margin-left: 5vw;
+		text-align: center;
+		background-color: #464c54;
+		display: flex;
+		flex-direction: column;
+	}
+	#liveprice {
+		font-size: 75px;
+		color: #ffffff;
+		text-align: center;
+	}
+	#select-quantity {
+		font-size: 1em;
+		margin: 10px;
+		padding: 10px;
+		border-radius: 5px;
+		font-family: "Montserrat", sans-serif;
+		text-align: center;
+		background-color: #1f1f1f;
+		color: #ffffff;
+	}
+	.header__title {
+		width: inherit;
+		background-color: #303235;
+		display: flex;
+		justify-content: center;
+		height: 10vh;
+	}
+	.header__logo {
+		height: 7.5vh;
+		margin-top: 5px;
+		align-self: center;
+	}
 }
