@@ -68,12 +68,16 @@ body {
 	border-radius: 5px;
 	font-family: "Montserrat", sans-serif;
 	text-align: center;
+	background-color: #1f1f1f;
+	color: #ffffff;
 }
 button,
 .snipcart-add-item {
-	font-size: 1em;
+	font-size: 1.5em;
 	margin: 10px;
 	padding: 10px;
 	border-radius: 5px;
 	font-family: "Montserrat", sans-serif;
+	background-color: #1f1f1f;
+	color: #ffffff;
 }
