@@ -33,7 +33,7 @@ body {
 	color: #ffffff;
 	font-size: 1.5em;
 }
-form {
+#qform {
 	width: 100vw;
 	text-align: center;
 	background-color: #00c6e2;
