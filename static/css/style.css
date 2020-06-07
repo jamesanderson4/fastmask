@@ -40,7 +40,7 @@ body {
 .header__img {
 	height: inherit;
 }
-h3 {
+.desc {
 	color: #ffffff;
 	font-size: 1em;
 	font-weight: 400;
@@ -108,7 +108,7 @@ button,
 		top: 0;
 		display: block;
 	}
-	h3 {
+	.desc {
 		color: #ffffff;
 		font-size: 1em;
 		font-weight: 400;
