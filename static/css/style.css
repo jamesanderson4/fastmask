@@ -50,6 +50,9 @@ h3 {
 .col {
 	display: none;
 }
+#hdnimg {
+	display: none;
+}
 #content {
 	width: 100vw;
 	height: 100vw;
