@@ -114,6 +114,8 @@ button,
 		font-weight: 400;
 		width: 50vw;
 		padding-left: 5vw;
+		margin-top: 20px;
+		margin-bottom: 20px;
 	}
 	#content {
 		width: 60vw;
@@ -164,5 +166,8 @@ button,
 	}
 	.header__img {
 		height: inherit;
+	}
+	.header__description {
+		margin-bottom: 20px;
 	}
 }
