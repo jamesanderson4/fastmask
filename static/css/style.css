@@ -13,8 +13,7 @@ body {
 	font-family: "Montserrat", sans-serif;
 	background-color: #303235;
 	overflow-x: hidden;
-	overflow-y: scroll;
-	position: relative;
+	position: fixed;
 }
 .header {
 	text-align: center;
