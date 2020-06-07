@@ -1,15 +1,19 @@
+html,
 * {
 	margin: 0;
 	padding: 0;
 	border: 0;
 }
+html,
 body {
-	max-height: 100vh;
+	height: 100vh;
 	width: 100vw;
+}
+body {
 	font-family: "Montserrat", sans-serif;
 	background-color: #303235;
-	overflow: hidden;
-	position: fixed;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 .header {
 	text-align: center;
