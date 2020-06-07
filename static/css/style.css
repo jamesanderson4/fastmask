@@ -48,6 +48,9 @@ h3 {
 	width: 90vw;
 	padding-left: 5vw;
 }
+.header__description {
+	margin-bottom: 10px;
+}
 .col {
 	display: none;
 }
