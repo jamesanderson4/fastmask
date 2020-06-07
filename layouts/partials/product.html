@@ -1,15 +1,73 @@
-<div class="product">
-	<h2 class="product__name">{{ .id }}</h2>
-	<div class="product__button-container">
-		<div class="product__price">£{{ .price }}</div>
-		<button
-			class="snipcart-add-item buy-button"
-			data-item-id="{{ .id }}"
-			data-item-price="{{ .price }}"
-			data-item-url="{{ .product_url }}"
-			data-item-description="{{ .description }}"
-		>
-			Add to cart
-		</button>
-	</div>
-</div>
+<form>
+	<p id="liveprice">£5</p>
+	<select id="select-quantity">
+		<option value="5" selected>5pcs</option>
+		<option value="15">15pcs</option>
+		<option value="25">25pcs</option>
+		<option value="50">50pcs</option>
+	</select>
+	<br />
+	<button
+		class="snipcart-add-item"
+		data-item-url="/"
+		data-item-id="5"
+		data-item-price="5"
+		data-item-name="3-ply Disposable Facemasks"
+	>
+		Add to cart
+	</button>
+	<button
+		class="snipcart-add-item"
+		data-item-url="/"
+		data-item-id="15"
+		data-item-price="10"
+		data-item-name="3-ply Disposable Facemasks"
+	>
+		Add to cart
+	</button>
+	<button
+		class="snipcart-add-item"
+		data-item-url="/"
+		data-item-id="25"
+		data-item-price="15"
+		data-item-name="3-ply Disposable Facemasks"
+	>
+		Add to cart
+	</button>
+	<button
+		class="snipcart-add-item"
+		data-item-url="/"
+		data-item-id="50"
+		data-item-price="25"
+		data-item-name="3-ply Disposable Facemasks"
+	>
+		Add to cart
+	</button>
+</form>
+<script>
+	$(function () {
+		$(".snipcart-add-item").hide();
+		$('.snipcart-add-item[data-item-id="5"]').show();
+		$("#select-quantity").val(5);
+	});
+	$("#select-quantity").change(function () {
+		$(".snipcart-add-item").hide();
+		var qid = $('.snipcart-add-item[data-item-id="' + $(this).val() + '"]');
+		qid.show();
+		qid = qid.attr("data-item-id");
+		var qprice = "£5";
+		if (qid == "5") {
+			qprice = "£5";
+		} else if (qid == "15") {
+			qprice = "£10";
+		} else if (qid == "25") {
+			qprice = "£15";
+		} else if (qid == "50") {
+			qprice = "£25";
+		}
+		qprice = '<p id="liveprice">' + qprice + "</p>";
+		$("#liveprice").html(qprice);
+
+		console.log(qid);
+	});
+</script>

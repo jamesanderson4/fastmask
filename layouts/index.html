@@ -1,10 +1,7 @@
 
 {{ partial "header.html" . }}
 <main class="products">
-  {{ $products := getJSON "/data/products.json" }}
-  {{ range $products }}
-  {{ partial "product.html" . }}
-  {{ end }}
+  {{partial "product.html" . }}
 </main>
     {{ partial "footer.html" . }}
 	</body>
