@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="shortcut icon"
+			type="image/x-icon"
+			href="/images/icons/favicon.ico"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.snipcart.com/themes/v3.0.14/default/snipcart.css"
+		/>
+		<div
+			id="snipcart"
+			data-api-key="ODYyNzA3MzEtNmRkYS00YTc3LWEzOWUtMzFmZDkxOGFmYjZmNjM3MjY5OTY1NjA1OTUxNzQz"
+			hidden
+		></div>
+		<script src="https://cdn.snipcart.com/themes/v3.0.14/default/snipcart.js"></script>
+		<link rel="stylesheet" href="/css/style.css" />
+		<title>Fast mask</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__cart">
+				<a href="#" class="snipcart-checkout" style="text-decoration: none;">
+					<div class="snipcart-summary">
+						<img id="hdnimg" src="/images/icons/cart.svg" alt="" />
+					</div>
+				</a>
+			</div>
+		</header>
+		<button
+			class="snipcart-add-item"
+			data-item-url="{{ .Params.pgurl }}"
+			data-item-id="{{ .Params.id }}"
+			data-item-price="{{ .Params.price  }}"
+			data-item-name="{{ .Title }}"
+			data-item-image="/images/mask.jpg"
+		>
+			Add to cart
+		</button>
+	</body>
+</html>

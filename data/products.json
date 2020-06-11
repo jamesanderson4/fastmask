@@ -1,22 +1,22 @@
-[
-	{
+{
+	"five": {
 		"id": "5pcs",
 		"Quantity": "5",
 		"price": "5"
 	},
-	{
+	"fifteen": {
 		"id": "15pcs",
 		"Quantity": "15",
 		"price": "10"
 	},
-	{
+	"twentyfive": {
 		"id": "25pcs",
 		"Quantity": "25",
 		"price": "15"
 	},
-	{
+	"fifty": {
 		"id": "50pcs",
 		"Quantity": "50",
 		"price": "25"
 	}
-]
+}

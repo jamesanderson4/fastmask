@@ -1,3 +1,4 @@
+{{ $products := site.Data.products }}
 <form id="qform">
 	<div class="container">
 		<p id="liveprice">£5</p>
@@ -13,9 +14,9 @@
 	<div class="container">
 		<button
 			class="snipcart-add-item"
-			data-item-url="/"
+			data-item-url="www.fastmask.co.uk/a"
 			data-item-id="5"
-			data-item-price="5"
+			data-item-price="{{$products.five.price}}"
 			data-item-name="5PCS 3-ply Disposable Facemasks"
 			data-item-image="/images/mask.jpg"
 		>
@@ -23,9 +24,9 @@
 		</button>
 		<button
 			class="snipcart-add-item"
-			data-item-url="/"
+			data-item-url="www.fastmask.co.uk/b"
 			data-item-id="15"
-			data-item-price="10"
+			data-item-price="{{$products.fifteen.price}}"
 			data-item-name="15PCS 3-ply Disposable Facemasks"
 			data-item-image="/images/mask.jpg"
 		>
@@ -33,9 +34,9 @@
 		</button>
 		<button
 			class="snipcart-add-item"
-			data-item-url="/"
+			data-item-url="www.fastmask.co.uk/c"
 			data-item-id="25"
-			data-item-price="15"
+			data-item-price="{{$products.twentyfive.price}}"
 			data-item-name="25PCS 3-ply Disposable Facemasks"
 			data-item-image="/images/mask.jpg"
 		>
@@ -43,9 +44,9 @@
 		</button>
 		<button
 			class="snipcart-add-item"
-			data-item-url="/"
+			data-item-url="www.fastmask.co.uk/d"
 			data-item-id="50"
-			data-item-price="25"
+			data-item-price="{{$products.fifty.price}}"
 			data-item-name="50PCS 3-ply Disposable Facemasks"
 			data-item-image="/images/mask.jpg"
 		>
